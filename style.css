@@ -77,4 +77,127 @@
 }
 .landmark-grid-container span, .landmark-grid-container img {
   display: none;
+}
+
+.box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  background: url("./icon.png");
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 5px 5px 5px #cccccc inset, -5px -5px 5px #ffffff inset;
+  -webkit-animation: anime 12s cubic-bezier(0.16, 1, 0.3, 1) 2s infinite alternate;
+          animation: anime 12s cubic-bezier(0.16, 1, 0.3, 1) 2s infinite alternate;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: url("./icon.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 5px 5px 5px #cccccc inset, -5px -5px 5px #ffffff inset;
+  }
+  5% {
+    width: 60px;
+    height: 60px;
+    background: url("./icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 5px 5px 5px #cccccc, 5px 5px 5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  10% {
+    width: 60px;
+    height: 180px;
+    background: url("./icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 5px 5px 5px #cccccc, 5px 5px 5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  15% {
+    width: 180px;
+    height: 180px;
+    background: url(./qr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 10px 10px 10px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
+  100% {
+    width: 180px;
+    height: 180px;
+    background: url(./qr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 10px 10px 10px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
+}
+
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: url("./icon.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 5px 5px 5px #cccccc inset, -5px -5px 5px #ffffff inset;
+  }
+  5% {
+    width: 60px;
+    height: 60px;
+    background: url("./icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 5px 5px 5px #cccccc, 5px 5px 5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  10% {
+    width: 60px;
+    height: 180px;
+    background: url("./icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 5px 5px 5px #cccccc, 5px 5px 5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  15% {
+    width: 180px;
+    height: 180px;
+    background: url(./qr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 10px 10px 10px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
+  100% {
+    width: 180px;
+    height: 180px;
+    background: url(./qr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 10px 10px 10px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
 }/*# sourceMappingURL=style.css.map */
