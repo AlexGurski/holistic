@@ -40,8 +40,8 @@ function onResults(results) {
                  {color: 'white', lineWidth: 4});
   drawLandmarks(canvasCtx, allVisibleLandmarks,
                 {color: 'yellow', lineWidth: 2});
-  drawConnectors(canvasCtx, results.faceLandmarks, FACEMESH_TESSELATION,
-                 {color: '#0ee9e599', lineWidth: 1});
+  // drawConnectors(canvasCtx, results.faceLandmarks, FACEMESH_TESSELATION,
+  //                {color: '#0ee9e599', lineWidth: 1});
   drawConnectors(canvasCtx, results.leftHandLandmarks, HAND_CONNECTIONS,
                  {color: 'white', lineWidth: 2});
   drawLandmarks(canvasCtx, results.leftHandLandmarks,
@@ -72,7 +72,7 @@ holistic.setOptions({
   smoothLandmarks: true,
   enableSegmentation: false,
   smoothSegmentation: true,
-  refineFaceLandmarks: true,
+  refineFaceLandmarks: false,
   minDetectionConfidence: 0.5,
   minTrackingConfidence: 0.5
 });
