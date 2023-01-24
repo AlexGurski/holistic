@@ -20,7 +20,22 @@
     left: 20px;
     width: 20vh;
     height: 20vh;
+    animation: ani1 20s forwards infinite;
+    opacity: 0;
 }
+.ic{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20vh;
+    height: 20vh;
+}
+
+@keyframes ani1 {
+    0% {opacity: 0;}
+    50% {opacity:1;}
+    100% {opacity: 0;}
+  }
 .square-box {
     width: 40vh;
     height: 40vh;
