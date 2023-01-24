@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.output_canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.input_video {
+  opacity: 0;
+}
+
+.qr {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20vh;
+  height: 20vh;
+}
+
+.square-box {
+  width: 40vh;
+  height: 40vh;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.landmark-grid-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 153, 153, 0.6);
+}
+.landmark-grid-container span, .landmark-grid-container img {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
