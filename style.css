@@ -17,66 +17,12 @@
   opacity: 0;
 }
 
-.qr {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 20vh;
-  height: 20vh;
-  -webkit-animation: ani1 20s forwards infinite;
-          animation: ani1 20s forwards infinite;
-  opacity: 0;
-}
-
 .ic {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 20vh;
   height: 20vh;
-}
-
-@-webkit-keyframes ani1 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes ani1 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.square-box {
-  width: 40vh;
-  height: 40vh;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-.landmark-grid-container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(153, 153, 153, 0.6);
-}
-.landmark-grid-container span, .landmark-grid-container img {
-  display: none;
 }
 
 .box {
@@ -130,7 +76,8 @@
   18% {
     width: 180px;
     height: 180px;
-    background: url(./qr.png);
+    background: url("./iconOp.png");
+    background: url("./qr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -140,7 +87,7 @@
   100% {
     width: 180px;
     height: 180px;
-    background: url(./qr.png);
+    background: url("./iconOp.png"), url("./qr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -183,7 +130,8 @@
   18% {
     width: 180px;
     height: 180px;
-    background: url(./qr.png);
+    background: url("./iconOp.png");
+    background: url("./qr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -193,11 +141,122 @@
   100% {
     width: 180px;
     height: 180px;
-    background: url(./qr.png);
+    background: url("./iconOp.png"), url("./qr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
     box-shadow: 10px 10px 10px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
   }
+}
+.wrap {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  margin: auto;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  transform-style: preserve-3d;
+}
+
+.cube > div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #000;
+  border: solid 1px #eeeeee;
+  color: #ffffff;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cube > div img {
+  width: 80%;
+  height: 80%;
+}
+
+.front {
+  transform: translateZ(50px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.cube {
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+}
+
+.wrap:hover .front {
+  transform: translateZ(200px);
+}
+
+.wrap:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+.cube > div {
+  transition: transform 0.2s ease-in;
 }/*# sourceMappingURL=style.css.map */

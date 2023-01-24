@@ -7,7 +7,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d/control_utils_3d.js" crossorigin="anonymous" ></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./icon.png">
   <title>5s Control</title>
@@ -18,13 +17,30 @@
     <video class="input_video"></video>
     <canvas class="output_canvas" width="1280px" height="720px"></canvas>
   </div>
-  <div class='square-box'>
-    <div class="landmark-grid-container">
+
+  <div class="wrap">
+    <div class="cube">
+      <div class="front">
+        <img src="./icon.png" alt="qr" class="ic" id='ic'/>
+      </div>
+      <div class="back">
+        <img src="./icon.png" alt="qr" class="ic" id='ic'/>
+      </div>
+      <div class="top">
+        <img src="./tool.png" alt="qr" class="ic" id='ic'/>
+      </div>
+      <div class="bottom">
+        <img src="./safety.png" alt="qr" class="ic" id='ic'/>
+      </div>
+      <div class="left">
+        <img src="./idle.png" alt="qr" class="ic" id='ic'/>
+      </div>
+      <div class="right">
+        <img src="./staf.png" alt="qr" class="ic" id='ic'/>
+      </div>
     </div>
   </div>
   
-  <!-- <img src="./icon.png" alt="qr" class="ic" id='ic'/>
-  <img src="./qr.png" alt="qr" class="qr" id='qr'/> -->
   <div class="box"></div>
 </body>
 <script src="module.js" crossorigin="anonymous"></script>

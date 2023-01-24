@@ -2,21 +2,6 @@
 const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
-const LandmarkGrid = window.LandmarkGrid;
-
-const landmarkContainer = document.getElementsByClassName('landmark-grid-container')[0];
-const grid = new LandmarkGrid(landmarkContainer, {
-connectionColor: 0xCCCCCC,
-definedColors:
-    [{name: 'LEFT', value: 0xffa500}, {name: 'RIGHT', value: 0x00ffff}],
-      range: 2,
-      fitToGrid: true,
-      labelSuffix: 'm',
-      landmarkSize: 2,
-      numCellsPerAxis: 4,
-      showHidden: false,
-      centered: true,
-});
 
 function onResults(results) {
   
@@ -52,15 +37,6 @@ function onResults(results) {
                 {color: 'yellow', radius: 3});
   canvasCtx.restore();
   
-  if (results.poseLandmarks) {
-    
-    grid.updateLandmarks(results.poseLandmarks,POSE_CONNECTIONS, [
-      {list: Object.values(POSE_LANDMARKS_LEFT), color: 'LEFT'},
-      {list: Object.values(POSE_LANDMARKS_RIGHT), color: 'RIGHT'},
-    ]);
-  } else {
-    grid.updateLandmarks([]);
-  }
 }
 
 const holistic = new Holistic({locateFile: (file) => {
