@@ -76,8 +76,7 @@
   18% {
     width: 180px;
     height: 180px;
-    background: url("./iconOp.png");
-    background: url("./qr.png");
+    background: url("./newQR.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -87,7 +86,7 @@
   100% {
     width: 180px;
     height: 180px;
-    background: url("./iconOp.png"), url("./qr.png");
+    background: url("./newQR.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -130,8 +129,7 @@
   18% {
     width: 180px;
     height: 180px;
-    background: url("./iconOp.png");
-    background: url("./qr.png");
+    background: url("./newQR.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -141,7 +139,7 @@
   100% {
     width: 180px;
     height: 180px;
-    background: url("./iconOp.png"), url("./qr.png");
+    background: url("./newQR.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
